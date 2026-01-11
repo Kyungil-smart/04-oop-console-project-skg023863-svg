@@ -14,6 +14,12 @@ public class PlayerCharacter : GameObject
     {
         Symbol = 'I';
     }
+
+    public void Crushed(GameObject gameObject)
+    {
+        //GameManager.IsGameOver = true;
+        SceneManager.Change("GameOver");
+    }
     public void Update()
     {
         if (InputManager.GetKey(ConsoleKey.LeftArrow))
@@ -43,6 +49,7 @@ public class PlayerCharacter : GameObject
             if (nextTileObject is IInteractable)
             {
                 (nextTileObject as IInteractable).Interact(this);
+                return;
             }
         }
 

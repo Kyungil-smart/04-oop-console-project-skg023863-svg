@@ -15,6 +15,7 @@ public class GameManager
 
         SceneManager.AddScene("Title", new TitleScene());
         SceneManager.AddScene("Circuit", new CircuitScene(_player));
+        SceneManager.AddScene("GameOver", new GameOverScene());
         
         SceneManager.Change("Title");
     }

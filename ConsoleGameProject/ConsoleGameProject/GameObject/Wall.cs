@@ -13,7 +13,7 @@ public class Wall : GameObject, IInteractable
 
     public void Interact(PlayerCharacter player)
     {
-
+        player.Crushed(this);
     }
 }
 
