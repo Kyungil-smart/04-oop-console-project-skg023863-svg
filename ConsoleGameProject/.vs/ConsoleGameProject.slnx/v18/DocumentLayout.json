@@ -1,0 +1,262 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\gameobject\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\gameobject\\playercharacter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\gameobject\\obstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\gameobject\\obstacle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\gameobject\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\gameobject\\gameobject.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\scenes\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\scenes\\scene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\utils\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\utils\\textextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\managers\\inputmanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\scenes\\titlescene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\utils\\menulist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\utils\\menulist.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\managers\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\managers\\scenemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\scenes\\circuitscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\scenes\\circuitscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\utils\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\utils\\vector.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1445E8FF-59C9-4AAF-B9A0-6BE0D3824265}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 4,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Obstacle.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\GameObject\\Obstacle.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\GameObject\\Obstacle.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\GameObject\\Obstacle.cs",
+              "RelativeToolTip": "ConsoleGameProject\\GameObject\\Obstacle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:52:20.333Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Tile.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\Tile.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Utils\\Tile.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\Tile.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Utils\\Tile.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:50:44.831Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Vector.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\Vector.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Utils\\Vector.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\Vector.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Utils\\Vector.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:47:17.607Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "GameObject.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\GameObject\\GameObject.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\GameObject\\GameObject.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\GameObject\\GameObject.cs",
+              "RelativeToolTip": "ConsoleGameProject\\GameObject\\GameObject.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:46:22.568Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "PlayerCharacter.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\GameObject\\PlayerCharacter.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\GameObject\\PlayerCharacter.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\GameObject\\PlayerCharacter.cs",
+              "RelativeToolTip": "ConsoleGameProject\\GameObject\\PlayerCharacter.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:44:20.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CircuitScene.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\CircuitScene.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Scenes\\CircuitScene.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\CircuitScene.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Scenes\\CircuitScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:42:58.788Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "InputManager.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\InputManager.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Managers\\InputManager.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\InputManager.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Managers\\InputManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:15:53.398Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "TitleScene.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\TitleScene.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Scenes\\TitleScene.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\TitleScene.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Scenes\\TitleScene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACwAAAAhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:28:00.569Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "MenuList.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\MenuList.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Utils\\MenuList.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\MenuList.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Utils\\MenuList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:19:36.367Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Scene.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\Scene.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Scenes\\Scene.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\Scene.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Scenes\\Scene.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:14:15.469Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "SceneManager.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\SceneManager.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Managers\\SceneManager.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\SceneManager.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Managers\\SceneManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:15:01.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "GameManager.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\GameManager.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Managers\\GameManager.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\GameManager.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Managers\\GameManager.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:08:41.156Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TextExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\TextExtensions.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Utils\\TextExtensions.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Utils\\TextExtensions.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Utils\\TextExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:27:16.364Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Program.cs",
+              "RelativeDocumentMoniker": "ConsoleGameProject\\Program.cs",
+              "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Program.cs",
+              "RelativeToolTip": "ConsoleGameProject\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-01-11T07:05:15.611Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

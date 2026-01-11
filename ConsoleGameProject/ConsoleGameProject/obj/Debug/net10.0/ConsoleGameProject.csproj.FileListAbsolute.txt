@@ -1,0 +1,15 @@
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\bin\Debug\net10.0\ConsoleGameProject.exe
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\bin\Debug\net10.0\ConsoleGameProject.deps.json
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\bin\Debug\net10.0\ConsoleGameProject.runtimeconfig.json
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\bin\Debug\net10.0\ConsoleGameProject.dll
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\bin\Debug\net10.0\ConsoleGameProject.pdb
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.AssemblyInfoInputs.cache
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.AssemblyInfo.cs
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.csproj.CoreCompileInputs.cache
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.sourcelink.json
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.dll
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\refint\ConsoleGameProject.dll
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.pdb
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ConsoleGameProject.genruntimeconfig.cache
+C:\Users\skg02\OneDrive\문서\GitHub\04-oop-console-project-skg023863-svg\ConsoleGameProject\ConsoleGameProject\obj\Debug\net10.0\ref\ConsoleGameProject.dll
