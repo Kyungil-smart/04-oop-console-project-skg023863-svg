@@ -3,6 +3,7 @@ public class CircuitScene : Scene
 {
     private Tile[,] _circuit = new Tile[20, 7];
     private PlayerCharacter _player;
+    private Wall _wall;
 
     public CircuitScene(PlayerCharacter player)
     {
@@ -12,6 +13,7 @@ public class CircuitScene : Scene
     public void Init(PlayerCharacter player)
     {
         _player = player;
+        _wall = new Wall();
 
         for (int y = 0; y < _circuit.GetLength(0); y++)
         {
@@ -19,6 +21,10 @@ public class CircuitScene : Scene
             {
                 Vector pos = new Vector(x, y);
                 _circuit[y, x] = new Tile(pos);
+                if(x == 0 || x == _circuit.GetLength(1) - 1)
+                {
+                    _circuit[y, x].OnTileObject = _wall;
+                }
             }
         }
     }

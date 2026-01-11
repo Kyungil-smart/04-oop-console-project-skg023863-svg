@@ -38,6 +38,14 @@ public class PlayerCharacter : GameObject
 
         GameObject nextTileObject = Circuit[nextPos.Y, nextPos.X].OnTileObject;
 
+        if (nextTileObject != null)
+        {
+            if (nextTileObject is IInteractable)
+            {
+                (nextTileObject as IInteractable).Interact(this);
+            }
+        }
+
         Circuit[Position.Y, Position.X].OnTileObject = null;
         Circuit[nextPos.Y, nextPos.X].OnTileObject = this;
         Position = nextPos;
