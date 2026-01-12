@@ -6,6 +6,7 @@ public class GameManager
     public static bool IsGameOver { get; set; }
     public const string GameName = "장애물 레이싱";
     private PlayerCharacter _player;
+    public static int Score = 0;
 
     public GameManager()
     {
