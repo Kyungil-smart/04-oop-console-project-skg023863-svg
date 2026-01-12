@@ -53,7 +53,6 @@ public class CircuitScene : Scene
         _circuit[_player.Position.Y, _player.Position.X].OnTileObject = null;
         _player.Circuit = null;
         Reset();
-        //GameManager.Score = 0;
     }
 
     public override void Render()
@@ -91,14 +90,16 @@ public class CircuitScene : Scene
         }
     }
     private void MakeObstacle() //장애물이 서킷의 맨 위에서 랜덤으로 생성됨
-    {
-        
-        int x = _random.Next(1, _circuit.GetLength(1) - 2);
-        int y = 0;
-
-        if (_circuit[y, x].OnTileObject == null) //만약 생성하려는 곳에 장애물이 있으면 null
+    {      
+        for (int i = 1; i <= _random.Next(1, 4); i++)
         {
-            _circuit[y, x].OnTileObject = _obstacle;
+            int x = _random.Next(1, _circuit.GetLength(1) - 2);
+            int y = 0;
+
+            if (_circuit[y, x].OnTileObject == null) //만약 생성하려는 곳에 장애물이 있으면 null
+            {
+                _circuit[y, x].OnTileObject = _obstacle;
+            }
         }
     }
 
