@@ -15,9 +15,9 @@ public class TitleScene : Scene
         _titleMenu = new MenuList();
         _titleMenu.Add("게임 시작", GameStart);
         _titleMenu.Add("크레딧", ViewCredits);
+        _titleMenu.Add("조작방법", ViewHowToPlay);
         _titleMenu.Add("게임 종료", GameQuit);
     }
-
 
     public override void Enter()
     {
@@ -69,6 +69,11 @@ public class TitleScene : Scene
     public void ViewCredits()
     {
         SceneManager.Change("Credit");
+    }
+
+    private void ViewHowToPlay()
+    {
+        SceneManager.Change("HowToPlay");
     }
 }
 

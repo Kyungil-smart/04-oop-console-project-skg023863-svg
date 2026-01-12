@@ -17,6 +17,7 @@ public class GameManager
         SceneManager.AddScene("Title", new TitleScene());
         SceneManager.AddScene("Circuit", new CircuitScene(_player));
         SceneManager.AddScene("Credit", new CreditScene());
+        SceneManager.AddScene("HowToPlay", new HowToPlayScene());
         SceneManager.AddScene("GameOver", new GameOverScene());
 
         SceneManager.Change("Title");
