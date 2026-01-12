@@ -6,6 +6,5 @@ public class Program
     {
         GameManager gameManager = new GameManager();
         gameManager.Run();
-
     }
 }

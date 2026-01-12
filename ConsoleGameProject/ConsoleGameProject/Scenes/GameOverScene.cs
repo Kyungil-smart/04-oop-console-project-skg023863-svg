@@ -16,11 +16,13 @@ public class GameOverScene : Scene
     }
     public override void Enter()
     {
+        Console.Clear();               
         _GameOverMenu.Reset();
     }
 
     public override void Exit()
     {
+        Console.Clear();
         GameManager.Score = 0;
     }
 

@@ -43,6 +43,7 @@ public class CircuitScene : Scene
 
     public override void Enter()
     {
+        Console.Clear();
         _player.Circuit = _circuit;
         _player.Position = new Vector(3, 17);
         _circuit[_player.Position.Y, _player.Position.X].OnTileObject = _player;
@@ -53,6 +54,7 @@ public class CircuitScene : Scene
         _circuit[_player.Position.Y, _player.Position.X].OnTileObject = null;
         _player.Circuit = null;
         Reset();
+        Console.Clear();
     }
 
     public override void Render()
@@ -62,6 +64,7 @@ public class CircuitScene : Scene
 
     public override void Update()
     {
+        PrintScore();
         
         _player.Update();
 
@@ -72,8 +75,6 @@ public class CircuitScene : Scene
             MakeObstacle();
             Cycle = 0;
         }
-
-        PrintScore();
 
         MoveObstaclesDown();
     }
@@ -91,7 +92,7 @@ public class CircuitScene : Scene
     }
     private void MakeObstacle() //장애물이 서킷의 맨 위에서 랜덤으로 생성됨
     {      
-        for (int i = 1; i <= _random.Next(1, 4); i++)
+        for (int i = 1; i <= _random.Next(0, 4); i++) // 0~4개의 장애물이 랜덤하게 생성
         {
             int x = _random.Next(1, _circuit.GetLength(1) - 2);
             int y = 0;
@@ -113,11 +114,11 @@ public class CircuitScene : Scene
                 {
                     GameObject underObject = _circuit[y + 1, x].OnTileObject;
 
-                    if (underObject == _player) //장애물 아래에 플레이어가 있을 경우 게임 오버 씬으로 이동
+                    if (underObject == _player)
                     {
                         _player.Crushed(_obstacle);
                     }
-                    else if (underObject == null) // 아래가 비어있으면 이동
+                    else //아래가 비어있으면 이동
                     {
                         if (y + 1 == _circuit.GetLength(0) - 1)  // 바닥에 닿았으면 제거
                         {                         

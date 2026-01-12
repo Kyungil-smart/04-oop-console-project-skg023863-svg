@@ -16,15 +16,16 @@ public class GameManager
 
         SceneManager.AddScene("Title", new TitleScene());
         SceneManager.AddScene("Circuit", new CircuitScene(_player));
+        SceneManager.AddScene("Credit", new CreditScene());
         SceneManager.AddScene("GameOver", new GameOverScene());
-        
+
         SceneManager.Change("Title");
     }
     public void Run()
     {
         while(!IsGameOver)
         {
-            Console.Clear();
+            //Console.Clear();
 
             SceneManager.Render();
 

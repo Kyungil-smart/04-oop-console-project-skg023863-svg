@@ -21,6 +21,7 @@ public class TitleScene : Scene
 
     public override void Enter()
     {
+        Console.Clear();
         _titleMenu.Reset();
     }
 
@@ -52,6 +53,7 @@ public class TitleScene : Scene
 
     public override void Exit()
     {
+        Console.Clear();
     }
 
     public void GameQuit()
@@ -66,6 +68,7 @@ public class TitleScene : Scene
 
     public void ViewCredits()
     {
+        SceneManager.Change("Credit");
     }
 }
 

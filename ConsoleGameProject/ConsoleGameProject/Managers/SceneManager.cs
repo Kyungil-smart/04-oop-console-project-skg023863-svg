@@ -32,6 +32,7 @@ public static class SceneManager
         if (Current == next) return;
 
         Current?.Exit();
+        Console.Clear();
         next.Enter();
 
         _prev = Current;
