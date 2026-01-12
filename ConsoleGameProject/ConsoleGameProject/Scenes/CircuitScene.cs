@@ -8,7 +8,8 @@ public class CircuitScene : Scene
     private Wall _wall;
     private Obstacle _obstacle;
     private Random _random = new Random();
-
+    private int CyclePoint = 5; // 장애물의 등장 주기 지정
+    private int Cycle = 0; // Update 메서드에서 1씩 증가 CyclePoint와 같아지면 장애물 등장
     public CircuitScene(PlayerCharacter player)
     {
         Init(player);
@@ -56,7 +57,15 @@ public class CircuitScene : Scene
     public override void Update()
     {
         _player.Update();
-        MakeObstacle();
+
+        Cycle++;
+
+        if(Cycle == CyclePoint)
+        {
+            MakeObstacle();
+            Cycle = 0;
+        }
+
         MoveObstaclesDown();
     }
 
