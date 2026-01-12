@@ -13,6 +13,9 @@ public class CircuitScene : Scene
     private Random _random = new Random();
     private int CyclePoint = 5; // 장애물의 등장 주기 지정
     private int Cycle = 0; // Update 메서드에서 1씩 증가 CyclePoint와 같아지면 장애물 등장
+
+    private int ScoreUpCyclePoint = 10; // 게임 점수가 올라가는 주기 지정
+    private int ScoreUpCycle = 0; // PrintScore 메서드에서 1씩 증가 ScoreUpCyclePoint와 같아지면 점수 오름
     public CircuitScene(PlayerCharacter player)
     {
         Init(player);
@@ -50,7 +53,7 @@ public class CircuitScene : Scene
         _circuit[_player.Position.Y, _player.Position.X].OnTileObject = null;
         _player.Circuit = null;
         Reset();
-        GameManager.Score = 0;
+        //GameManager.Score = 0;
     }
 
     public override void Render()
@@ -60,9 +63,7 @@ public class CircuitScene : Scene
 
     public override void Update()
     {
-        Console.SetCursorPosition(8, 0);
-        Console.Write($"Score:{GameManager.Score}"); // 점수 
-        GameManager.Score++;
+        
         _player.Update();
 
         Cycle++;
@@ -72,6 +73,8 @@ public class CircuitScene : Scene
             MakeObstacle();
             Cycle = 0;
         }
+
+        PrintScore();
 
         MoveObstaclesDown();
     }
@@ -139,6 +142,25 @@ public class CircuitScene : Scene
                 {
                     _circuit[y, x].OnTileObject = null;
                 }
+            }
+        }
+    }
+
+    private void PrintScore() // 점수 출력하는 메서드
+    {
+        Console.SetCursorPosition(8, 0);
+        ScoreUpCycle++;
+        if (GameManager.Score >= 10000) // 10000점이 MAX 점수
+        {
+            Console.Write("Score:MAX");
+        }
+        else
+        {
+            Console.Write($"Score:{GameManager.Score}");    
+            if(ScoreUpCycle == ScoreUpCyclePoint)
+            {
+                GameManager.Score++;
+                ScoreUpCycle = 0;
             }
         }
     }

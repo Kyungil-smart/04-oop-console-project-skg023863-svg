@@ -21,13 +21,15 @@ public class GameOverScene : Scene
 
     public override void Exit()
     {
-
+        GameManager.Score = 0;
     }
 
     public override void Render()
     {
         Console.SetCursorPosition(5, 1);
         "Game Over".Print(ConsoleColor.DarkRed);
+        Console.SetCursorPosition(5, 3);
+        "당신의 점수는: ".Print(); $"{GameManager.Score}".Print(ConsoleColor.Yellow);
 
         _GameOverMenu.Render(5, 5);
     }
