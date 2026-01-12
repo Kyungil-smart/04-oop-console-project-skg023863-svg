@@ -28,11 +28,11 @@ public class GameManager
         {
             //Console.Clear();
 
-            SceneManager.Render();
+            SceneManager.Update();
 
             InputManager.GetUserInput();
 
-            SceneManager.Update();
+            SceneManager.Render();
 
             Thread.Sleep(100);
         }

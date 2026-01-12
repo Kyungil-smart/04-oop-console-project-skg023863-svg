@@ -68,9 +68,10 @@ public class CircuitScene : Scene
         
         _player.Update();
 
+
         Cycle++;
 
-        if(Cycle == CyclePoint)
+        if (Cycle == CyclePoint)
         {
             MakeObstacle();
             Cycle = 0;
@@ -91,7 +92,7 @@ public class CircuitScene : Scene
         }
     }
     private void MakeObstacle() //장애물이 서킷의 맨 위에서 랜덤으로 생성됨
-    {      
+    {
         for (int i = 1; i <= _random.Next(0, 4); i++) // 0~4개의 장애물이 랜덤하게 생성
         {
             int x = _random.Next(1, _circuit.GetLength(1) - 2);
@@ -107,17 +108,21 @@ public class CircuitScene : Scene
     {
         for (int y = _circuit.GetLength(0) - 2; y >= 0; y--)
         {
-            for (int x = 1; x < _circuit.GetLength(1) - 2; x++)
+            for (int x = 1; x < _circuit.GetLength(1) - 1; x++)
             {
                 if (_circuit[y, x].OnTileObject == _obstacle)
                 {
                     GameObject underObject = _circuit[y + 1, x].OnTileObject;
 
-                    if (underObject == null) //아래가 비어있으면 이동
+                    if (underObject == _player) //장애물 아래에 플레이어가 있을 경우 게임 오버 씬으로 이동
+                    {
+                        _player.Crushed(_obstacle);
+                    }
+                    else if (underObject == null) // 아래가 비어있으면 이동
                     {
                         if (y + 1 == _circuit.GetLength(0) - 1)  // 바닥에 닿았으면 제거
                         {
-                            _circuit[y , x].OnTileObject = null;
+                            _circuit[y, x].OnTileObject = null;
                         }
                         else
                         {
@@ -125,49 +130,10 @@ public class CircuitScene : Scene
                             _circuit[y, x].OnTileObject = null;
                         }
                     }
-                    if (underObject != null)
-                    {
-                        if (underObject == _player)
-                        {
-                            _player.Crushed(underObject);
-                        }
-                    }
                 }
             }
         }
     }
-
-
-    //private void MoveObstaclesDown() //장애물이 아래로 내려가도록 하는 메서드
-    //{
-    //    for (int y = _circuit.GetLength(0) - 2; y >= 0; y--)
-    //    {
-    //        for (int x = 1; x < _circuit.GetLength(1) - 2; x++)
-    //        {
-    //            if (_circuit[y, x].OnTileObject == _obstacle)
-    //            {
-    //                GameObject underObject = _circuit[y + 1, x].OnTileObject;
-
-    //                if (underObject == _player)
-    //                {
-    //                    _player.Crushed(_obstacle);
-    //                }
-    //                if (underObject == null)//아래가 비어있으면 이동
-    //                {
-    //                    if (y + 1 == _circuit.GetLength(0) - 1)  // 바닥에 닿았으면 제거
-    //                    {
-    //                        _circuit[y, x].OnTileObject = null;
-    //                    }
-    //                    else
-    //                    {
-    //                        _circuit[y + 1, x].OnTileObject = _obstacle; // 바닥이 아니라면 이동
-    //                        _circuit[y, x].OnTileObject = null;
-    //                    }
-    //                }
-    //            }
-    //        }
-    //    }
-    //}
     private void Reset() // 재시작 시 장애물 없앨 때 사용하는 메서드
     {
         for (int y = 0; y < _circuit.GetLength(0); y++)

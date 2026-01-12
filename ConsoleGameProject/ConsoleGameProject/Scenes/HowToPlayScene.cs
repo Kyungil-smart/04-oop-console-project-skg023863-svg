@@ -36,7 +36,7 @@ public class HowToPlayScene : Scene
         Console.SetCursorPosition(3, 5);
         "장애물의 간격이 좁아집니다.".Print(ConsoleColor.Yellow);
         Console.SetCursorPosition(3, 6);
-        "장애물들을 피하며 높은 점수를 획득해보세요!".Print(ConsoleColor.Yellow);
+        "벽에 닿지 않고, 장애물들을 피하며 높은 점수를 획득해보세요!".Print(ConsoleColor.Yellow);
 
         Console.SetCursorPosition(3, 8);
         "조작 방법".Print(ConsoleColor.Green);
