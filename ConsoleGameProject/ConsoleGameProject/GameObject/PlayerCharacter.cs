@@ -15,9 +15,8 @@ public class PlayerCharacter : GameObject
         Symbol = 'I';
     }
 
-    public void Crushed(GameObject gameObject)
+    public void Crushed(GameObject gameObject) // 벽, 장애물에 닿으면 게임 오버씬으로 
     {
-        //GameManager.IsGameOver = true;
         SceneManager.Change("GameOver");
     }
     public void Update()
@@ -39,9 +38,6 @@ public class PlayerCharacter : GameObject
         Vector current = Position;
         Vector nextPos = Position + direction;
 
-        // 1. 맵 바깥은 아닌지?
-        // 2. 벽인지?
-
         GameObject nextTileObject = Circuit[nextPos.Y, nextPos.X].OnTileObject;
 
         if (nextTileObject != null)
@@ -49,13 +45,14 @@ public class PlayerCharacter : GameObject
             if (nextTileObject is IInteractable)
             {
                 (nextTileObject as IInteractable).Interact(this);
-                return;
             }
         }
-
-        Circuit[Position.Y, Position.X].OnTileObject = null;
-        Circuit[nextPos.Y, nextPos.X].OnTileObject = this;
-        Position = nextPos;
+        else 
+        {
+            Circuit[Position.Y, Position.X].OnTileObject = null;
+            Circuit[nextPos.Y, nextPos.X].OnTileObject = this;
+            Position = nextPos;
+        }     
     }
 }
 

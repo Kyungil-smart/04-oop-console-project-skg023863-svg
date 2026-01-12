@@ -20,6 +20,11 @@ public static class InputManager
 
     public static void GetUserInput()
     {
+        if(!Console.KeyAvailable)
+        {
+            _current = ConsoleKey.Clear;
+            return;
+        }
         ConsoleKey input = Console.ReadKey(true).Key;
         _current = ConsoleKey.Clear;
 

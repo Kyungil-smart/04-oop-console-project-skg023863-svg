@@ -27,7 +27,7 @@ public class GameOverScene : Scene
     public override void Render()
     {
         Console.SetCursorPosition(5, 1);
-        Console.WriteLine("Game Over");
+        "Game Over".Print(ConsoleColor.DarkRed);
 
         _GameOverMenu.Render(5, 5);
     }

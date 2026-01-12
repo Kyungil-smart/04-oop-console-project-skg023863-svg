@@ -19,11 +19,6 @@ public class GameManager
         
         SceneManager.Change("Title");
     }
-
-    public void init()
-    {
-
-    }
     public void Run()
     {
         while(!IsGameOver)
@@ -35,27 +30,9 @@ public class GameManager
             InputManager.GetUserInput();
 
             SceneManager.Update();
+
+            Thread.Sleep(100);
         }
     }
-
-    public void Enter()
-    {
-
-    }
-
-    public void Update()
-    {
-
-    }
-    public void Render()
-    {
-
-    }
-
-    public void Exit()
-    {
-
-    }
-
 }
 
