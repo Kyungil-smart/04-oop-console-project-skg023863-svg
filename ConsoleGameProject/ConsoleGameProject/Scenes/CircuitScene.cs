@@ -49,6 +49,7 @@ public class CircuitScene : Scene
         _player.Circuit = _circuit;
         _player.Position = new Vector(3, 17);
         _circuit[_player.Position.Y, _player.Position.X].OnTileObject = _player;
+        GameManager.Score = 0;
     }
 
     public override void Exit()
@@ -85,55 +86,64 @@ public class CircuitScene : Scene
 
     private void PrintCircuit()
     {
-        for (int y = 0; y < _circuit.GetLength(0); y++)
+        if (_player.IsActiveControl)
         {
-            for (int x = 0; x < _circuit.GetLength(1) - 1; x++)
+            for (int y = 0; y < _circuit.GetLength(0); y++)
             {
-                _circuit[y, x].Print();
+                for (int x = 0; x < _circuit.GetLength(1) - 1; x++)
+                {
+                    _circuit[y, x].Print();
+                }
+                Console.WriteLine();
             }
-            Console.WriteLine();
         }
     }
     private void MakeObstacle() //장애물이 서킷의 맨 위에서 랜덤으로 생성됨
     {
-        int obstacleCount = 0;
-
-        while (obstacleCount != obstacleSetting) // 장애물 개수 설정
+        if (_player.IsActiveControl)
         {
-            int x = _random.Next(1, _circuit.GetLength(1) - 2);
-            int y = 0;
+            int obstacleCount = 0;
 
-            if (_circuit[y, x].OnTileObject == null) //만약 생성하려는 곳에 장애물이 있으면 null
+            while (obstacleCount != obstacleSetting) // 장애물 개수 설정
             {
-                _circuit[y, x].OnTileObject = _obstacle;
-                obstacleCount++;
+                int x = _random.Next(1, _circuit.GetLength(1) - 2);
+                int y = 0;
+
+                if (_circuit[y, x].OnTileObject == null) //만약 생성하려는 곳에 장애물이 있으면 null
+                {
+                    _circuit[y, x].OnTileObject = _obstacle;
+                    obstacleCount++;
+                }
             }
         }
     }
     private void MoveObstaclesDown() //장애물이 아래로 내려가도록 하는 메서드
     {
-        for (int y = _circuit.GetLength(0) - 2; y >= 0; y--)
+        if (_player.IsActiveControl)
         {
-            for (int x = 1; x < _circuit.GetLength(1) - 2; x++)
+            for (int y = _circuit.GetLength(0) - 2; y >= 0; y--)
             {
-                if (_circuit[y, x].OnTileObject == _obstacle)
+                for (int x = 1; x < _circuit.GetLength(1) - 2; x++)
                 {
-                    GameObject underObject = _circuit[y + 1, x].OnTileObject;
+                    if (_circuit[y, x].OnTileObject == _obstacle)
+                    {
+                        GameObject underObject = _circuit[y + 1, x].OnTileObject;
 
-                    if (underObject == _player) //장애물 아래에 플레이어가 있을 경우 게임 오버 씬으로 이동
-                    {
-                        _player.Crushed(_obstacle);
-                    }
-                    else if (underObject == null) // 아래가 비어있으면 이동
-                    {
-                        if (y + 1 == _circuit.GetLength(0) - 1)  // 바닥에 닿았으면 제거
+                        if (underObject == _player) //장애물 아래에 플레이어가 있을 경우 게임 오버 씬으로 이동
                         {
-                            _circuit[y, x].OnTileObject = null;
+                            _player.Crushed(_obstacle);
                         }
-                        else
+                        else if (underObject == null) // 아래가 비어있으면 이동
                         {
-                            _circuit[y + 1, x].OnTileObject = _obstacle; // 바닥이 아니라면 이동
-                            _circuit[y, x].OnTileObject = null;
+                            if (y + 1 == _circuit.GetLength(0) - 1)  // 바닥에 닿았으면 제거
+                            {
+                                _circuit[y, x].OnTileObject = null;
+                            }
+                            else
+                            {
+                                _circuit[y + 1, x].OnTileObject = _obstacle; // 바닥이 아니라면 이동
+                                _circuit[y, x].OnTileObject = null;
+                            }
                         }
                     }
                 }
@@ -155,24 +165,28 @@ public class CircuitScene : Scene
         cyclePoint = 8;
         scoreUpCyclePoint = 10;
         obstacleSetting = 1;
+        _player.IsActiveControl = true;
     }
 
     private void PrintScore() // 점수 출력하는 메서드
     {
-        Console.SetCursorPosition(8, 0);
-        scoreUpCycle++;
+        if (_player.IsActiveControl)
+        {
+            Console.SetCursorPosition(8, 0);
+            scoreUpCycle++;
 
-        if (GameManager.Score >= 10000) // 10000점이 MAX 점수
-        {
-            Console.Write("Score:MAX");
-        }
-        else
-        {
-            Console.Write($"Score:{GameManager.Score}");
-            if (scoreUpCycle == scoreUpCyclePoint)
+            if (GameManager.Score >= 10000) // 10000점이 MAX 점수
             {
-                GameManager.Score++;
-                scoreUpCycle = 0;
+                Console.Write("Score:MAX");
+            }
+            else
+            {
+                Console.Write($"Score:{GameManager.Score}");
+                if (scoreUpCycle == scoreUpCyclePoint)
+                {
+                    GameManager.Score++;
+                    scoreUpCycle = 0;
+                }
             }
         }
     }

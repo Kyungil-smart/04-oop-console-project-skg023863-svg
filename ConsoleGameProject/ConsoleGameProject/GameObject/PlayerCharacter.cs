@@ -1,9 +1,12 @@
 ﻿
 using System.Data;
+using System.Diagnostics;
 
 public class PlayerCharacter : GameObject
 {
     public Tile[,] Circuit { get; set; }
+    public bool IsActiveControl { get; set; }
+
 
     public PlayerCharacter()
     {
@@ -13,6 +16,7 @@ public class PlayerCharacter : GameObject
     public void Init()
     {
         Symbol = 'I';
+        IsActiveControl = true;
     }
 
     public void Crushed(GameObject gameObject) // 벽, 장애물에 닿으면 게임 오버씬으로 
@@ -30,10 +34,21 @@ public class PlayerCharacter : GameObject
         {
             Move(Vector.Right);
         }
+
+        if (InputManager.GetKey(ConsoleKey.Enter))
+        {
+            IsActiveControl = !IsActiveControl;
+        }
+
+        if (InputManager.GetKey(ConsoleKey.Q))
+        {
+            SceneManager.Change("Title");
+        }
     }
+
     private void Move(Vector direction)
     {
-        if (Circuit == null) return;
+        if (Circuit == null || !IsActiveControl) return;
 
         Vector current = Position;
         Vector nextPos = Position + direction;
@@ -47,12 +62,12 @@ public class PlayerCharacter : GameObject
                 (nextTileObject as IInteractable).Interact(this);
             }
         }
-        else 
+        else
         {
             Circuit[Position.Y, Position.X].OnTileObject = null;
             Circuit[nextPos.Y, nextPos.X].OnTileObject = this;
             Position = nextPos;
-        }     
+        }
     }
 }
 

@@ -43,6 +43,8 @@ public class HowToPlayScene : Scene
 
         Console.SetCursorPosition(3, 9);
         "왼쪽 방향키 : 왼쪽으로 이동 / 오른쪽 방향키 : 오른쪽으로 이동".Print(ConsoleColor.Green);
+        Console.SetCursorPosition(3, 10);
+        "Enter : Pause / Q : 게임 나가기".Print(ConsoleColor.Green);
     }
 }
 
