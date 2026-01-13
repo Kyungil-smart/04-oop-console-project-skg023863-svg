@@ -1,1 +1,18 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-2e0aaae1b6195c2367325f4f02e2d04e9abb55f0b24a779b69b11b9e10269abc.svg)](https://classroom.github.com/online_ide?assignment_repo_id=22157911&assignment_repo_type=AssignmentRepo)
+# 게임제목 : 장애물 레이싱
+
+
+
+장애물이 있는 레이싱 서킷을 달리는 게임입니다.
+
+장애물이나 벽에 닿으면 즉시 게임이 종료됩니다.
+
+게임이 진행될수록 장애물 수가 증가하거나 장애물의 등장 간격이 줄어듭니다.
+
+장애물을 피해서 최고 점수를 달성해보세요.
+
+'I' = 플레이어
+
+'*' = 장애물
+
+'|' = 벽
+
