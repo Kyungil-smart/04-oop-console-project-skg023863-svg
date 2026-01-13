@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\scenes\\circuitscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\scenes\\circuitscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\managers\\gamemanager.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -13,10 +17,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\scenes\\howtoplayscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\scenes\\howtoplayscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\scenes\\circuitscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|solutionrelative:consolegameproject\\scenes\\circuitscene.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B266135C-9735-E249-D081-A03917B199BD}|ConsoleGameProject\\ConsoleGameProject.csproj|c:\\users\\skg02\\onedrive\\\uBB38\uC11C\\github\\04-oop-console-project-skg023863-svg\\consolegameproject\\consolegameproject\\utils\\tile.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -82,7 +82,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -90,7 +90,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "HowToPlayScene.cs",
               "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\HowToPlayScene.cs",
               "RelativeDocumentMoniker": "ConsoleGameProject\\Scenes\\HowToPlayScene.cs",
@@ -98,25 +98,24 @@
               "RelativeToolTip": "ConsoleGameProject\\Scenes\\HowToPlayScene.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAkwCYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-12T07:33:32.558Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-12T07:33:32.558Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "GameManager.cs",
               "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\GameManager.cs",
               "RelativeDocumentMoniker": "ConsoleGameProject\\Managers\\GameManager.cs",
               "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\GameManager.cs",
               "RelativeToolTip": "ConsoleGameProject\\Managers\\GameManager.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAYwCIAAAAMAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T07:08:41.156Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "SceneManager.cs",
               "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Managers\\SceneManager.cs",
               "RelativeDocumentMoniker": "ConsoleGameProject\\Managers\\SceneManager.cs",
@@ -124,18 +123,17 @@
               "RelativeToolTip": "ConsoleGameProject\\Managers\\SceneManager.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAAwBwAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-01-11T07:15:01.962Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-01-11T07:15:01.962Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 0,
               "Title": "CircuitScene.cs",
               "DocumentMoniker": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\CircuitScene.cs",
               "RelativeDocumentMoniker": "ConsoleGameProject\\Scenes\\CircuitScene.cs",
               "ToolTip": "C:\\Users\\skg02\\OneDrive\\\uBB38\uC11C\\GitHub\\04-oop-console-project-skg023863-svg\\ConsoleGameProject\\ConsoleGameProject\\Scenes\\CircuitScene.cs",
               "RelativeToolTip": "ConsoleGameProject\\Scenes\\CircuitScene.cs",
-              "ViewState": "AgIAAGoAAAAAAAAAAAAwwG8AAAANAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-01-11T07:42:58.788Z",
               "EditorCaption": ""

@@ -11,11 +11,13 @@ public class CircuitScene : Scene
 
     private Obstacle _obstacle; // 장애물
     private Random _random = new Random();
-    private int CyclePoint = 5; // 장애물의 등장 주기 지정
+    private int cyclePoint = 8; // 장애물의 등장 주기 지정
     private int Cycle = 0; // Update 메서드에서 1씩 증가 CyclePoint와 같아지면 장애물 등장
 
-    private int ScoreUpCyclePoint = 10; // 게임 점수가 올라가는 주기 지정
-    private int ScoreUpCycle = 0; // PrintScore 메서드에서 1씩 증가 ScoreUpCyclePoint와 같아지면 점수 오름
+    private int scoreUpCyclePoint = 10; // 게임 점수가 올라가는 주기 지정
+    private int scoreUpCycle = 0; // PrintScore 메서드에서 1씩 증가 ScoreUpCyclePoint와 같아지면 점수 오름
+
+    private int obstacleSetting = 1; // 장애물 등장 확률 조절
     public CircuitScene(PlayerCharacter player)
     {
         Init(player);
@@ -33,7 +35,7 @@ public class CircuitScene : Scene
             {
                 Vector pos = new Vector(x, y);
                 _circuit[y, x] = new Tile(pos);
-                if(x == 0 || x == _circuit.GetLength(1) - 2) // 왼쪽, 오른쪽 가장자리에 벽 생성
+                if (x == 0 || x == _circuit.GetLength(1) - 2) // 왼쪽, 오른쪽 가장자리에 벽 생성
                 {
                     _circuit[y, x].OnTileObject = _wall;
                 }
@@ -64,14 +66,15 @@ public class CircuitScene : Scene
 
     public override void Update()
     {
-        PrintScore();
-        
-        _player.Update();
+        DifficultySetting();
 
+        PrintScore();
+
+        _player.Update();
 
         Cycle++;
 
-        if (Cycle == CyclePoint)
+        if (Cycle == cyclePoint)
         {
             MakeObstacle();
             Cycle = 0;
@@ -93,7 +96,9 @@ public class CircuitScene : Scene
     }
     private void MakeObstacle() //장애물이 서킷의 맨 위에서 랜덤으로 생성됨
     {
-        for (int i = 1; i <= _random.Next(0, 4); i++) // 0~4개의 장애물이 랜덤하게 생성
+        int obstacleCount = 0;
+
+        while (obstacleCount != obstacleSetting) // 장애물 개수 설정
         {
             int x = _random.Next(1, _circuit.GetLength(1) - 2);
             int y = 0;
@@ -101,6 +106,7 @@ public class CircuitScene : Scene
             if (_circuit[y, x].OnTileObject == null) //만약 생성하려는 곳에 장애물이 있으면 null
             {
                 _circuit[y, x].OnTileObject = _obstacle;
+                obstacleCount++;
             }
         }
     }
@@ -108,7 +114,7 @@ public class CircuitScene : Scene
     {
         for (int y = _circuit.GetLength(0) - 2; y >= 0; y--)
         {
-            for (int x = 1; x < _circuit.GetLength(1) - 1; x++)
+            for (int x = 1; x < _circuit.GetLength(1) - 2; x++)
             {
                 if (_circuit[y, x].OnTileObject == _obstacle)
                 {
@@ -134,7 +140,7 @@ public class CircuitScene : Scene
             }
         }
     }
-    private void Reset() // 재시작 시 장애물 없앨 때 사용하는 메서드
+    private void Reset() // 재시작 시 장애물, 여러 Cycle 변수 초기화
     {
         for (int y = 0; y < _circuit.GetLength(0); y++)
         {
@@ -146,26 +152,54 @@ public class CircuitScene : Scene
                 }
             }
         }
+        cyclePoint = 8;
+        scoreUpCyclePoint = 10;
+        obstacleSetting = 1;
     }
 
     private void PrintScore() // 점수 출력하는 메서드
     {
         Console.SetCursorPosition(8, 0);
-        ScoreUpCycle++;
+        scoreUpCycle++;
+
         if (GameManager.Score >= 10000) // 10000점이 MAX 점수
         {
             Console.Write("Score:MAX");
         }
         else
         {
-            Console.Write($"Score:{GameManager.Score}");    
-            if(ScoreUpCycle == ScoreUpCyclePoint)
+            Console.Write($"Score:{GameManager.Score}");
+            if (scoreUpCycle == scoreUpCyclePoint)
             {
                 GameManager.Score++;
-                ScoreUpCycle = 0;
+                scoreUpCycle = 0;
             }
         }
     }
-}
 
+    private void DifficultySetting()
+    {
+        if (GameManager.Score >= 100)
+        {
+            cyclePoint = 5;
+        }
+        else if (GameManager.Score >= 80)
+        {
+            obstacleSetting = 4;
+        }
+        else if (GameManager.Score >= 60)
+        {
+            cyclePoint = 6;
+        }
+        else if (GameManager.Score >= 40)
+        {
+            cyclePoint = 7;
+            obstacleSetting = 3;
+        }
+        else if (GameManager.Score >= 20)
+        {
+            obstacleSetting = 2;
+        }
+    }
+}
 
